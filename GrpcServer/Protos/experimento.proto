@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+package warehouse;
+
+// Definición del servicio Warehouse (Almacén).
+service Warehouse {
+  // Obtener un producto por su ID (llamada unaria simple)
+  rpc GetProductById (ProductID) returns (Product){}
+  // Buscar productos por nombre (llamada con streaming de servidor)
+  rpc GetProductByName (ProductName) returns (stream Product){}
+  // Agregar un nuevo producto (llamada unaria simple)
+  rpc AddProduct (Product) returns (ProductID){}
+  // Actualizar un producto existente (llamada unaria simple)
+  rpc UpdateProduct (Product) returns (Product){}
+}
+
+// Representa un producto en el almacén.
+message Product {
+  string id = 1;
+  string name = 2;
+  int32 quantity = 3;
+}
+
+// Mensaje de solicitud con el ID del producto.
+message ProductID {
+  string id = 1;
+}
+
+// Mensaje de solicitud con el nombre del producto para búsqueda.
+message ProductName {
+  string name = 1;
+}
+
+// Detalles de error para respuestas estructuradas.
+message ErrorResponse {
+  string reason = 1;
+  string details = 2;
+}
