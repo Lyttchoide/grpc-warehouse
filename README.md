@@ -78,9 +78,9 @@ En gRPC no existen códigos `200`, `404` ni `500`. En su lugar, se utilizan cód
 ## Requisitos previos y entorno en VS Code
 
 ### 1. Software necesario
-- **.NET SDK 7.0 o superior** (verifica en la terminal con `dotnet --version`). Descarga: [dotnet.microsoft.com](https://dotnet.microsoft.com/download)
-- **Node.js v18 o superior** y **npm** (verifica con `node -v` y `npm -v`). Descarga: [nodejs.org](https://nodejs.org/)
-- **Visual Studio Code**. Descarga: [code.visualstudio.com](https://code.visualstudio.com/)
+- **.NET SDK 7.0 o superior** (verifica en la terminal con `dotnet --version`). 
+- **Node.js v18 o superior** y **npm** (verifica con `node -v` y `npm -v`). 
+- **Visual Studio Code**. 
 
 ### 2. Extensiones recomendadas en VS Code
 Abre la pestaña de extensiones (`Ctrl+Shift+X` en Windows/Linux) e instala:
