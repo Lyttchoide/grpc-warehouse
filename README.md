@@ -85,7 +85,7 @@ En gRPC no existen códigos `200`, `404` ni `500`. En su lugar, se utilizan cód
 ### 2. Extensiones recomendadas en VS Code
 Abre la pestaña de extensiones (`Ctrl+Shift+X` en Windows/Linux) e instala:
 - **C# Dev Kit** o **C#** (Microsoft): Provee autocompletado, resaltado de sintaxis y depuración para .NET.
-- **vscode-proto3** o **Protocol Buffers** (zxh404): Resaltado de sintaxis y formato para archivos `.proto`.
+- **Protocol Buffers** (Pbkit): Resaltado de sintaxis y formato para archivos `.proto`.
 - **Postman** (o Postman de escritorio): Para interactuar visualmente con endpoints gRPC.
 
 ---
@@ -131,7 +131,7 @@ cd NodeClient
 npm init -y
 ```
 
-Modifica `NodeClient/package.json` para habilitar módulos ES (`"type": "module"`) y agrega las dependencias gRPC:
+**Modifica** `NodeClient/package.json` para habilitar módulos ES (`"type": "module"`) y agrega las dependencias gRPC:
 
 ```powershell
 npm install @grpc/grpc-js @grpc/proto-loader dotenv
@@ -728,7 +728,6 @@ Postman cuenta con soporte nativo para gRPC. Puedes interactuar visualmente con 
 
 ---
 
-## Lista de verificación para el entregable
 
 Antes de dar por concluido tu proyecto, verifica que cumple con todos los puntos requeridos:
 
