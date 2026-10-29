@@ -618,6 +618,27 @@ function printHeader(title) {
   console.log("=======================================================\n");
 })();
 ```
+## 4.3 Verificar el package.json en la carpeta NodeClient
+
+Verificar que el archivo package.json tenga una información similar o la misma a esta:
+
+```
+{
+  "name": "grpc-node-client",
+  "version": "1.0.0",
+  "description": "Cliente gRPC para el servicio Warehouse, implementado con @grpc/grpc-js",
+  "main": "client.js",
+  "type": "module",
+  "scripts": {
+    "start": "node client.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.12.0",
+    "@grpc/proto-loader": "^0.7.15",
+    "dotenv": "^18.0.8"
+  }
+}
+```
 
 ---
 
